@@ -1,0 +1,19 @@
+<nav>
+  <h1>theBumble</h1>
+  <a href="/">
+    {% if site.data.theme.social.gravatar %}
+    <img src="http://www.gravatar.com/avatar/{{ site.data.theme.social.gravatar }}?s=200" id="gravatar" alt="My photo"/>
+    {% else %}
+    <img src="/logo.svg" id="logo" alt="Blog logo"/>
+    {% endif %}
+  </a>
+  <div id="bio">
+    <p>Security Researcher</p>
+    <a href="/">Home</a><br>
+    <a href="/projects/">Projects</a><br>
+    <a href="/about/">About</a><br>
+  </div>
+  <div id="social">
+    {% include social.html %}
+  </div>
+</nav>
