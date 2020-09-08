@@ -2,24 +2,69 @@
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
+    <title>The blog of {{ site.data.theme.name }}</title>
+    <link href="https://thebumble.io/atom.xml" rel="self"/>
+    <link href="https://thebumble.io/"/>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <id>https://thebumble.io/</id>
+    <author>
+        <name>{{ site.data.theme.name }}</name>
+    </author>
 
- <title>The blog of {{ site.data.theme.name }}</title>
- <link href="{{ site.url }}/atom.xml" rel="self"/>
- <link href="{{ site.url }}"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}</id>
- <author>
-   <name>{{ site.data.theme.name }}</name>
- </author>
+    <entry>
+        <title>h2c Smuggling: Request Smuggling via HTTP/2 Cleartext (h2c)</title>
+        <link href="https://labs.bishopfox.com/tech-blog/h2c-smuggling-request-smuggling-via-http/2-cleartext-h2c"/>
+        <updated>2020-09-08T08:00:00Z</updated>
+        <id>https://labs.bishopfox.com/tech-blog/h2c-smuggling-request-smuggling-via-http/2-cleartext-h2c</id>
+    </entry>
 
- {% for post in site.posts %}
- <entry>
-   <title>{{ post.title }}</title>
-   <link href="{{site.url}}{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.url }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
- </entry>
- {% endfor %}
+    <entry>
+        <title>OOB to RCE: Exploitation of the Hobbes Functional Interpreter</title>
+        <link href="https://know.bishopfox.com/advisories/oob-to-rce-exploitation-of-the-hobbes-functional-interpreter"/>
+        <updated>2020-06-12T08:00:00Z</updated>
+        <id>https://know.bishopfox.com/advisories/oob-to-rce-exploitation-of-the-hobbes-functional-interpreter</id>
+    </entry>
+
+    <entry>
+        <title>RMIScout: Safely and Quickly Brute-Force Java RMI Interfaces for Code Execution</title>
+        <link href="https://know.bishopfox.com/research/rmiscout"/>
+        <updated>2020-05-26T08:00:00Z</updated>
+        <id>https://know.bishopfox.com/research/rmiscout</id>
+    </entry>
+
+    <entry>
+        <title>PHPGGC: Added Monolog RCE3 gadget</title>
+        <link href="https://github.com/ambionics/phpggc/pull/72/commits/d2ad90d75258588e89172cf4cffe9b064357eb3b"/>
+        <updated>2020-04-27T08:00:00Z</updated>
+        <id>https://github.com/ambionics/phpggc/pull/72/commits/d2ad90d75258588e89172cf4cffe9b064357eb3b</id>
+    </entry>
+
+    <entry>
+        <title>Twisted 19.10.0: Multiple HTTP Request Splitting</title>
+        <link href="https://know.bishopfox.com/advisories/twisted-version-19.10.0"/>
+        <updated>2020-03-11T08:00:00Z</updated>
+        <id>https://know.bishopfox.com/advisories/twisted-version-19.10.0</id>
+    </entry>
+
+    <entry>
+        <title>GadgetProbe: Exploiting Deserialization to Brute-Force the Remote Classpath</title>
+        <link href="https://know.bishopfox.com/research/gadgetprobe"/>
+        <updated>2020-02-18T08:00:00Z</updated>
+        <id>https://know.bishopfox.com/research/gadgetprobe</id>
+    </entry>
+
+    <entry>
+        <title>[GitGot] Going Semi-Automated in an Automated World: Using Human-in-the-Loop Workflows to Improve Our Security Tools</title>
+        <link href="https://know.bishopfox.com/blog/going-semi-automated-in-an-automated-world-using-human-in-the-loop-workflows-to-improve-our-security-tools"/>
+        <updated>2019-07-18T08:00:00Z</updated>
+        <id>https://know.bishopfox.com/blog/going-semi-automated-in-an-automated-world-using-human-in-the-loop-workflows-to-improve-our-security-tools</id>
+    </entry>
+
+    <entry>
+        <title>Server-Side Spreadsheet Injection - Formula Injection to Remote Code Execution</title>
+        <link href="https://know.bishopfox.com/blog/2018/06/server-side-spreadsheet-injections"/>
+        <updated>2018-06-11T08:00:00Z</updated>
+        <id>https://know.bishopfox.com/blog/2018/06/server-side-spreadsheet-injections</id>
+    </entry>
 
 </feed>
