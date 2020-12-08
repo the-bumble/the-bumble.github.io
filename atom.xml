@@ -12,6 +12,13 @@
     </author>
 
     <entry>
+        <title>RMIScout Update (RMI-IIOP, SSL, Invoke mode) and Lessons Learned Brute-forcing RMI-IIOP</title>
+        <link href="https://labs.bishopfox.com/tech-blog/lessons-learned-on-brute-forcing-rmi-iiop-with-rmiscout"/>
+        <updated>2020-12-08T08:00:00Z</updated>
+        <id>https://labs.bishopfox.com/tech-blog/lessons-learned-on-brute-forcing-rmi-iiop-with-rmiscout</id>
+    </entry>
+
+    <entry>
         <title>h2c Smuggling: Request Smuggling via HTTP/2 Cleartext (h2c)</title>
         <link href="https://labs.bishopfox.com/tech-blog/h2c-smuggling-request-smuggling-via-http/2-cleartext-h2c"/>
         <updated>2020-09-08T08:00:00Z</updated>
