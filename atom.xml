@@ -12,6 +12,13 @@
     </author>
 
     <entry>
+        <title>An Exploration of JSON Interoperability Vulnerabilities</title>
+        <link href="https://labs.bishopfox.com/tech-blog/an-exploration-of-json-interoperability-vulnerabilities"/>
+        <updated>2021-02-25T08:00:00Z</updated>
+        <id>https://labs.bishopfox.com/tech-blog/an-exploration-of-json-interoperability-vulnerabilities</id>
+    </entry>
+
+    <entry>
         <title>RMIScout Update (RMI-IIOP, SSL, Invoke mode) and Lessons Learned Brute-forcing RMI-IIOP</title>
         <link href="https://labs.bishopfox.com/tech-blog/lessons-learned-on-brute-forcing-rmi-iiop-with-rmiscout"/>
         <updated>2020-12-08T08:00:00Z</updated>
